@@ -10,7 +10,7 @@ import (
 	"github.com/opentelekomcloud/gophertelekomcloud/openstack/networking/v1/eips"
 )
 
-func TestBandwidthsUpdate(t *testing.T) {
+func TestBandwidthUpdate(t *testing.T) {
 	client, err := clients.NewNetworkV1Client()
 	if err != nil {
 		t.Fatalf("Unable to create NetworkV1 client: %v", err)

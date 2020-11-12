@@ -38,7 +38,7 @@ func TestAuthenticatedClient(t *testing.T) {
 	}
 }
 
-func TestReauth(t *testing.T) {
+func TestReAuth(t *testing.T) {
 	ao, err := openstack.AuthOptionsFromEnv()
 	if err != nil {
 		t.Fatalf("Unable to obtain environment auth options: %v", err)
