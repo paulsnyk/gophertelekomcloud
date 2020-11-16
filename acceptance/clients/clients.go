@@ -425,7 +425,6 @@ func NewRdsV3() (*golangsdk.ServiceClient, error) {
 }
 
 func UpdatePeerTenantDetails(ao *golangsdk.AuthOptions) error {
-
 	if peerTenantID := os.Getenv("OS_Peer_Tenant_ID"); peerTenantID != "" {
 		ao.TenantID = peerTenantID
 		ao.TenantName = ""
